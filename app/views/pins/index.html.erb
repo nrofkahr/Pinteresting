@@ -12,6 +12,7 @@
   <tbody>
     <% @pins.each do |pin| %>
       <tr>
+        <td><%= image_tag pin.image.url(:medium) %></td>
         <td><%= pin.description %></td>
         <td><%= pin.user.try(:email) %></td>
         <td><%= link_to 'Show', pin %></td>
@@ -26,5 +27,5 @@
 
 <br>
 <% if user_signed_in? %>
-  <% link_to "New Pin", new_pin_path %>
+  <%= link_to "New Pin", new_pin_path %>
 <% end %>
