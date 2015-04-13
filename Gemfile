@@ -16,6 +16,7 @@ gem 'devise', '~> 3.4.1'
 gem 'bootstrap-sass'
 gem "paperclip", "~> 4.0"
 gem 'paperclip-ghostscript'
+gem 'aws-sdk', '< 2.0'
 
 
 group :development, :test do
