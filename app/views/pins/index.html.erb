@@ -17,9 +17,13 @@
               <span class="glyphicon glyphicon-trash"></span>
               Delete
             <% end %>
-          <% end %>
-        </div>
+          </div>
+        <% end %>
       </div>
     </div>
   <% end %>
+</div>
+
+<div class="center">
+  <%= will_paginate @posts, renderer: BootstrapPagination::Rails %>
 </div>
