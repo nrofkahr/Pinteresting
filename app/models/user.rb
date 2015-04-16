@@ -7,5 +7,6 @@ class User < ActiveRecord::Base
   # Requires Name field to be present
   validates :name, presence: true
   
-  has_many :pins
+  								#User deletes account and also deletes pins
+  has_many :pins, dependent: :destroy
 end
